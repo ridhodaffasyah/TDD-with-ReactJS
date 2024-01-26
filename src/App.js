@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Hero from './components/Hero';
+import ThumbnailVideo from './components/VideoThumbnail';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero />
+      <ThumbnailVideo thumbnail={'/assets/one-piece.jpe'} videoPreview={'https://www.youtube.com/embed/MCb13lbVGE0?muted=1&controls=0&autoplay=0'}/>
     </div>
   );
 }

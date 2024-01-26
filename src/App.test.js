@@ -1,8 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+it('should render Hero Section', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  const heroSection = screen.getByTestId("hero-section");
+
+  expect(heroSection).toBeInTheDocument();
 });
+
